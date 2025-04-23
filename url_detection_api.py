@@ -1,5 +1,8 @@
 from flask import Flask, request, jsonify
 import pickle
+@app.route('/')
+def home():
+    return "AI Cyber Shield API is Running! 🚀"
 
 # Load trained model, vectorizer, and label encoder
 with open('phishing_url_model.pkl', 'rb') as model_file:
