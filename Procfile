@@ -1,1 +1,1 @@
-web: gunicorn url_detection_api:app
+web: python url_detection_api.py
