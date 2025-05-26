@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import tldextract
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # Load model, vectorizer, and label encoder
 model = pickle.load(open("model.pkl", "rb"))
